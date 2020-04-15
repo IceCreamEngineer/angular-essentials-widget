@@ -1,15 +1,15 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
   selector: "app-user",
   template: `
-    <input type="text" [(ngModel)]="name" />
+    <input type="text" id="unique2" [(ngModel)]="name" />
     <p>Hello {{ name }}!</p>
-    <p>I'm the user component</p>
+    <strong>I'm the user component</strong>
   `,
 })
 export class UserComponent {
-  name = "Matt";
+  @Input() name;
 
   onUserInput(event) {
     this.name = event.target.value;
