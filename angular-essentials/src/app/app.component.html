@@ -306,4 +306,5 @@
 <hr />
 <app-user [name]="rootName" (nameChanged)="onNameChanged($event)"></app-user>
 <hr />
-<app-dashboard></app-dashboard>
+<app-cart [items]="rootItems" (itemAdded)="onItemAdded($event)"></app-cart>
+<!-- <app-dashboard></app-dashboard> -->
