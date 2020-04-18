@@ -304,6 +304,6 @@
 
 <p>Let's walk through some <strong>components</strong>!</p>
 <hr />
-<app-user [name]="'Matthew'"></app-user>
+<app-user [name]="rootName" (nameChanged)="onNameChanged($event)"></app-user>
 <hr />
 <app-dashboard></app-dashboard>

@@ -12,3 +12,7 @@ ng serve
 
 -- URL
 http://localhost:4200/
+
+-- Creating a component
+(may have to cd to the app folder, or at least the base project directory)
+ng g c <component name>
