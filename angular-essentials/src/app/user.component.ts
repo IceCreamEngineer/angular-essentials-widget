@@ -3,11 +3,16 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
 @Component({
   selector: "app-user",
   template: `
-    <input type="text" (input)="onUserInput($event)" [value]="name" />
+    <div>
+      <strong>I'm the user component</strong>
+    </div>
+    <div>
+      <p>My user:</p>
+      <input type="text" (input)="onUserInput($event)" [value]="name" />
+    </div>
     <!-- <input type="text" id="unique2" [(ngModel)]="name" /> -->
     <p>Hello {{ name }}!</p>
-    <strong>I'm the user component</strong>
-    <app-user-detail></app-user-detail>
+    <!-- <app-user-detail></app-user-detail> -->
   `,
 })
 export class UserComponent {
