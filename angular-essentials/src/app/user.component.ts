@@ -12,7 +12,8 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
     </div>
     <!-- <input type="text" id="unique2" [(ngModel)]="name" /> -->
     <p>Hello {{ name }}!</p>
-    <!-- <app-user-detail></app-user-detail> -->
+    <hr />
+    <app-user-detail></app-user-detail>
   `,
 })
 export class UserComponent {
