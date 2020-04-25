@@ -2,7 +2,7 @@
 
 Repo for what I make in the Angular Udemy course: https://www.udemy.com/course/angular-essentials-angular-2-angular-4-with-typescript/
 
-Current spot: Finished Section 2
+Current spot: Completed third lesson (now on video 39)
 
 Things to remember:
 
@@ -15,4 +15,4 @@ http://localhost:4200/
 
 -- Creating a component <br/>
 (may have to cd to the app folder, or at least the base project directory) <br/>
-ng g c <component name>
+ng g c component-name
