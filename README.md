@@ -15,4 +15,4 @@ http://localhost:4200/
 
 -- Creating a component <br/>
 (may have to cd to the app folder, or at least the base project directory) <br/>
-ng g c <component name>
+ng g c component-name
