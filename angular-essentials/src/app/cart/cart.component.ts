@@ -43,4 +43,11 @@ export class CartComponent implements OnInit {
   onAddItem() {
     this.itemAdded.emit(this.newItem);
   }
+
+  /**
+   * Enter key listener
+   */
+  onKeydown() {
+    this.onAddItem();
+  }
 }
