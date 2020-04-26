@@ -6,7 +6,11 @@
 
 <p>To add to the cart, enter a value here and click "Add Item":</p>
 
-<div>
-  <input type="text" [(ngModel)]="newItem" placeholder="Enter an item here" />
-  <button (click)="onAddItem()">Add Item</button>
-</div>
+<input type="text" [(ngModel)]="newItem" placeholder="Enter an item here" />
+<button (click)="onAddItem()" class="btn btn-primary">Add Item</button>
+
+<hr />
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of items">{{ item }}</li>
+</ul>
