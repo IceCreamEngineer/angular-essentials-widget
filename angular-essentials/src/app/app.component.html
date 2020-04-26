@@ -11,9 +11,18 @@
 <app-user [name]="rootName" (nameChanged)="onNameChanged($event)"></app-user>
 <hr /> -->
 
-<p>{{ number }}</p>
-<button (click)="onIncrease()" class="btn btn-primary">Increase number</button>
+<!-- <p>{{ number }}</p>
+<button (click)="onIncrease()" class="btn btn-primary">Increase number</button> -->
 
 <!-- Actual comments below -->
-<!-- <app-cart [items]="rootItems" (itemAdded)="onItemAdded($event)"></app-cart> -->
+<div class="container" style="margin: 20px;">
+  <div class="row">
+    <div class="col-xs-12">
+      <app-cart
+        [items]="rootItems"
+        (itemAdded)="onItemAdded($event)"
+      ></app-cart>
+    </div>
+  </div>
+</div>
 <!-- <app-dashboard></app-dashboard> -->
