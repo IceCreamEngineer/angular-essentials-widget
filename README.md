@@ -2,9 +2,12 @@
 
 Repo for what I make in the Angular Udemy course: https://www.udemy.com/course/angular-essentials-angular-2-angular-4-with-typescript/
 
-Current spot: Completed the fifth lesson and started the course project.
+Current spot: Completed the sixth lesson!
 
 Things to remember:
+
+-- Creating an Angular project (when you have nginx/ Angular CLI installed) <br/>
+ng new app-name
 
 -- Running the app <br/>
 cd C:\Users\Matt\Documents\Side-Hustles\angular-essentials-widget\angular-essentials <br/>
@@ -16,3 +19,12 @@ http://localhost:4200/
 -- Creating a component <br/>
 (may have to cd to the app folder, or at least the base project directory) <br/>
 ng g c component-name
+
+-- Creating a service <br/>
+(same deal as above) <br/>
+ng g s service-name
+
+-- Dependency Injection / Injecting Services
+Services are a great tool to cleanly pass and update properties between components despite hierarchical differences <br/>
+You identify them as a provider in the AppModule so that you can then add them to the constructors and thus as <br/> attributes to the dependent components. These components use them in methods for event emitting or other basic <br/>
+operations. Note: Need Injectable decorator in order to inject a service within a service.
