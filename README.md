@@ -24,7 +24,7 @@ ng g c component-name
 (same deal as above) <br/>
 ng g s service-name
 
--- Dependency Injection / Injecting Services
+-- Dependency Injection / Injecting Services <br/>
 Services are a great tool to cleanly pass and update properties between components despite hierarchical differences <br/>
 You identify them as a provider in the AppModule so that you can then add them to the constructors and thus as <br/> attributes to the dependent components. These components use them in methods for event emitting or other basic <br/>
 operations. Note: Need Injectable decorator in order to inject a service within a service.
