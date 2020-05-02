@@ -2,7 +2,7 @@
 
 Repo for what I make in the Angular Udemy course: https://www.udemy.com/course/angular-essentials-angular-2-angular-4-with-typescript/
 
-Current spot: Completed the fourth lesson!
+Current spot: Completed the fifth lesson and started the course project.
 
 Things to remember:
 
