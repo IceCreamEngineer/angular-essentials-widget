@@ -8,9 +8,14 @@
 
 <input type="text" [(ngModel)]="newItem" placeholder="Enter an item here" />
 <button
-  (click)="onAddItem()"
+  #AddItem
+  (click)="isClicked = true; onAddItem($event)"
   class="btn"
-  [ngClass]="{ 'btn-primary': newItem !== '', 'btn-default': newItem === '' }"
+  [ngClass]="{
+    'btn-primary': newItem !== '',
+    'btn-default': newItem === '',
+    active: !isClicked
+  }"
   [disabled]="newItem === ''"
 >
   Add Item

@@ -1,4 +1,13 @@
-import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
+import {
+  Component,
+  OnInit,
+  Input,
+  Output,
+  EventEmitter,
+  HostListener,
+  ElementRef,
+  ViewChild,
+} from "@angular/core";
 
 @Component({
   selector: "app-cart",
@@ -17,6 +26,10 @@ export class CartComponent implements OnInit {
    * The new, user-inputted item
    */
   newItem = "";
+
+  isClicked = false;
+
+  // @ViewChild("AddItem") addItemBtn: ElementRef;
 
   /**
    * What the user updates our items to be on input
@@ -40,14 +53,19 @@ export class CartComponent implements OnInit {
   /**
    * Our Add Item event listener
    */
-  onAddItem() {
+  onAddItem(event) {
+    console.log(event);
+
     this.itemAdded.emit(this.newItem);
   }
 
   /**
-   * Enter key listener
+   * Enter key event listener
    */
-  onKeydown() {
-    this.onAddItem();
+  @HostListener("window:keyup.enter", [])
+  keyEvent() {
+    if (this.newItem !== "" && !this.isClicked) {
+      this.itemAdded.emit(this.newItem);
+    }
   }
 }
