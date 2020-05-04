@@ -2,7 +2,9 @@
 
 Repo for what I make in the Angular Udemy course: https://www.udemy.com/course/angular-essentials-angular-2-angular-4-with-typescript/
 
-Current spot: Completed the sixth lesson!
+Current spot: Completed the seventh lesson!
+
+<hr/>
 
 Things to remember:
 
@@ -28,3 +30,7 @@ ng g s service-name
 Services are a great tool to cleanly pass and update properties between components despite hierarchical differences <br/>
 You identify them as a provider in the AppModule so that you can then add them to the constructors and thus as <br/> attributes to the dependent components. These components use them in methods for event emitting or other basic <br/>
 operations. Note: Need Injectable decorator in order to inject a service within a service.
+
+-- Form Handling <br/>
+Angular has two approaches to form-handling: The Template approach and the Reactive approach. We went over the <br/>
+template approach in this course, but would need to research the Reactive approach in order to compare.
