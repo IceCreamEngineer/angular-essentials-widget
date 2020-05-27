@@ -2,13 +2,13 @@
 
 Repo for what I make in the Angular Udemy course: https://www.udemy.com/course/angular-essentials-angular-2-angular-4-with-typescript/
 
-Current spot: Completed the seventh lesson!
+Current spot: Finished Lesson 8 on Routing.
 
 <hr/>
 
 Things to remember:
 
--- Creating an Angular project (when you have nginx/ Angular CLI installed) <br/>
+-- Creating an Angular project (when you have nginx / Angular CLI installed) <br/>
 ng new app-name
 
 -- Running the app <br/>
@@ -20,7 +20,10 @@ http://localhost:4200/
 
 -- Creating a component <br/>
 (may have to cd to the app folder, or at least the base project directory) <br/>
-ng g c component-name
+ng g c component-name <br/>
+You can mod this to add <br/>
+ng g c component-name --skipTests=true <br/>
+In order to avoid creating a .spec.ts file
 
 -- Creating a service <br/>
 (same deal as above) <br/>
