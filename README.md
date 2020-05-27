@@ -2,7 +2,7 @@
 
 Repo for what I make in the Angular Udemy course: https://www.udemy.com/course/angular-essentials-angular-2-angular-4-with-typescript/
 
-Current spot: On vid 84
+Current spot: Finished Lesson 8 on Routing.
 
 <hr/>
 
