@@ -2,7 +2,7 @@
 
 Repo for what I make in the Angular Udemy course: https://www.udemy.com/course/angular-essentials-angular-2-angular-4-with-typescript/
 
-Current spot: Finished Lesson 9 on Reactivity, RxJS, and Observables.
+Current spot: Finished Section 10 on using HTTP Client to send requests to an API.
 
 <hr/>
 
