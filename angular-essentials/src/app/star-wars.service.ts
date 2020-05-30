@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { LogService } from "./log.service";
+import { HttpClient } from "@angular/common/http";
 import { Subject } from "rxjs";
 
 @Injectable({
@@ -12,9 +13,21 @@ export class StarWarsService {
   ];
   private logService: LogService;
   charactersChanged = new Subject<void>();
+  httpClient: HttpClient;
 
-  constructor(logService: LogService) {
+  constructor(logService: LogService, httpClient: HttpClient) {
     this.logService = logService;
+    this.httpClient = httpClient;
+  }
+
+  fetchCharacters() {
+    this.httpClient.get("https://swapi.dev/api/people/").subscribe((data) => {
+      const chars = data["results"].map((char) => {
+        return { name: char.name, side: "" };
+      });
+      this.characters = chars;
+      this.charactersChanged.next();
+    });
   }
 
   public getCharacters(chosenList) {

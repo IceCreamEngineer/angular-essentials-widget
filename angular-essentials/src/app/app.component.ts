@@ -1,5 +1,6 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { random } from "lodash";
+import { StarWarsService } from "./star-wars.service";
 
 // declare var _: any;
 
@@ -8,23 +9,14 @@ import { random } from "lodash";
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"],
 })
-export class AppComponent {
-  title = "angular-essentials";
-  rootName = "Matthew";
-  rootItems = ["Apples", "Bananas", "Cherries"];
-  number = 0;
+export class AppComponent implements OnInit {
+  swService: StarWarsService;
 
-  onNameChanged(newName) {
-    this.rootName = newName;
+  constructor(swService: StarWarsService) {
+    this.swService = swService;
   }
 
-  onItemAdded(addedItem) {
-    this.rootItems.push(addedItem);
-    console.log(this.rootItems);
-  }
-
-  onIncrease() {
-    // this.number++;
-    this.number = random(1, 10);
+  ngOnInit(): void {
+    this.swService.fetchCharacters();
   }
 }
