@@ -1,8 +1,6 @@
 # angular-essentials-widget
 
-Repo for what I make in the Angular Udemy course: https://www.udemy.com/course/angular-essentials-angular-2-angular-4-with-typescript/
-
-Current spot: Finished Section 10 on using HTTP Client to send requests to an API.
+Repo for what I made in the Angular Udemy course: https://www.udemy.com/course/angular-essentials-angular-2-angular-4-with-typescript/
 
 <hr/>
 
@@ -37,3 +35,8 @@ operations. Note: Need Injectable decorator in order to inject a service within 
 -- Form Handling <br/>
 Angular has two approaches to form-handling: The Template approach and the Reactive approach. We went over the <br/>
 template approach in this course, but would need to research the Reactive approach in order to compare.
+
+-- Deployment <br/>
+ng build --prod <br/>
+ng build --prod --base-href /my-cool-angular-app/ <br/>
+All the contents of the dist folder can be uploaded to a hosting service in order to deploy (e.g, AWS S3)
